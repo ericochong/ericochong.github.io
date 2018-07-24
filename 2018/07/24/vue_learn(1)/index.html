@@ -6,15 +6,22 @@
   <meta name="renderer" content="webkit">
   <meta http-equiv="X-UA-Compatible" content="IE=edge" >
   <link rel="dns-prefetch" href="http://yoursite.com">
-  <title>EricoChong</title>
+  <title>Vue基础学习笔记 （一） | EricoChong</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta property="og:type" content="website">
-<meta property="og:title" content="EricoChong">
-<meta property="og:url" content="http://yoursite.com/index.html">
+  <meta name="description" content="一、介绍Vue是一套用于构建用户界面的渐进式框架，说白了就是个很牛X的前端框架，谁用谁知道。Vue的特点：  是一个构建用户界面的框架 是一个轻量级的MVVM框架，类似于Angular、react这样的 是数据驱动和组件化的前端开发方式 丰富简单的API实现响应式的数据绑定和组合的视图组件 容易上手第一次接触的同学建议先去通读  官方文档 。  二、第一个实例123456789101112&amp;lt;">
+<meta name="keywords" content="Vue">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Vue基础学习笔记 （一）">
+<meta property="og:url" content="http://yoursite.com/2018/07/24/vue_learn(1)/index.html">
 <meta property="og:site_name" content="EricoChong">
+<meta property="og:description" content="一、介绍Vue是一套用于构建用户界面的渐进式框架，说白了就是个很牛X的前端框架，谁用谁知道。Vue的特点：  是一个构建用户界面的框架 是一个轻量级的MVVM框架，类似于Angular、react这样的 是数据驱动和组件化的前端开发方式 丰富简单的API实现响应式的数据绑定和组合的视图组件 容易上手第一次接触的同学建议先去通读  官方文档 。  二、第一个实例123456789101112&amp;lt;">
 <meta property="og:locale" content="default">
+<meta property="og:image" content="https://cn.vuejs.org/images/lifecycle.png">
+<meta property="og:updated_time" content="2018-07-24T02:05:20.000Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="EricoChong">
+<meta name="twitter:title" content="Vue基础学习笔记 （一）">
+<meta name="twitter:description" content="一、介绍Vue是一套用于构建用户界面的渐进式框架，说白了就是个很牛X的前端框架，谁用谁知道。Vue的特点：  是一个构建用户界面的框架 是一个轻量级的MVVM框架，类似于Angular、react这样的 是数据驱动和组件化的前端开发方式 丰富简单的API实现响应式的数据绑定和组合的视图组件 容易上手第一次接触的同学建议先去通读  官方文档 。  二、第一个实例123456789101112&amp;lt;">
+<meta name="twitter:image" content="https://cn.vuejs.org/images/lifecycle.png">
   
     <link rel="alternative" href="/atom.xml" title="EricoChong" type="application/atom+xml">
   
@@ -140,16 +147,14 @@
             <canvas data-colors="#eaeaea" data-sectionHeight="100" data-contentId="js-content" id="myCanvas1" class="anm-canvas"></canvas>
           </div>
           <div id="js-content" class="content-ll">
-            
-  
-    <article id="post-vue_learn(1)" class="article article-type-post  article-index" itemscope itemprop="blogPost">
+            <article id="post-vue_learn(1)" class="article article-type-post " itemscope itemprop="blogPost">
   <div class="article-inner">
     
       <header class="article-header">
         
   
-    <h1 itemprop="name">
-      <a class="article-title" href="/2018/07/24/vue_learn(1)/">Vue基础学习笔记 （一）</a>
+    <h1 class="article-title" itemprop="name">
+      Vue基础学习笔记 （一）
     </h1>
   
 
@@ -202,16 +207,75 @@
       
 
       
-        <p class="article-more-link">
-          <a class="article-more-a" href="/2018/07/24/vue_learn(1)/">展开全文 >></a>
-        </p>
-      
 
+      
+        
+<div class="share-btn share-icons tooltip-left">
+  <div class="tooltip tooltip-east">
+    <span class="tooltip-item">
+      <a href="javascript:;" class="share-sns share-outer">
+        <i class="icon icon-share"></i>
+      </a>
+    </span>
+    <span class="tooltip-content">
+      <div class="share-wrap">
+        <div class="share-icons">
+          <a class="weibo share-sns" href="javascript:;" data-type="weibo">
+            <i class="icon icon-weibo"></i>
+          </a>
+          <a class="weixin share-sns wxFab" href="javascript:;" data-type="weixin">
+            <i class="icon icon-weixin"></i>
+          </a>
+          <a class="qq share-sns" href="javascript:;" data-type="qq">
+            <i class="icon icon-qq"></i>
+          </a>
+          <a class="douban share-sns" href="javascript:;" data-type="douban">
+            <i class="icon icon-douban"></i>
+          </a>
+          <a class="qzone share-sns" href="javascript:;" data-type="qzone">
+            <i class="icon icon-qzone"></i>
+          </a>
+          <a class="facebook share-sns" href="javascript:;" data-type="facebook">
+            <i class="icon icon-facebook"></i>
+          </a>
+          <a class="twitter share-sns" href="javascript:;" data-type="twitter">
+            <i class="icon icon-twitter"></i>
+          </a>
+          <a class="google share-sns" href="javascript:;" data-type="google">
+            <i class="icon icon-google"></i>
+          </a>
+        </div>
+      </div>
+    </span>
+  </div>
+</div>
+
+<div class="page-modal wx-share js-wx-box">
+    <a class="close js-modal-close" href="javascript:;"><i class="icon icon-close"></i></a>
+    <p>扫一扫，分享到微信</p>
+    <div class="wx-qrcode">
+      <img src="//pan.baidu.com/share/qrcode?url=http://yoursite.com/2018/07/24/vue_learn(1)/" alt="微信分享二维码">
+    </div>
+</div>
+
+<div class="mask js-mask"></div>
       
       <div class="clearfix"></div>
     </div>
   </div>
 </article>
+
+  
+<nav id="article-nav">
+  
+  
+    <a href="/2018/07/24/contains/" id="article-nav-older" class="article-nav-link-wrap">
+      <div class="article-nav-title">js判断一个元素是不是另一个元素的子元素</div>
+      <i class="icon-circle-right"></i>
+    </a>
+  
+</nav>
+
 
 <aside class="wrap-side-operation">
     <div class="mod-side-operation">
@@ -231,137 +295,14 @@
 
 
 
-
   
-    <article id="post-contains" class="article article-type-post  article-index" itemscope itemprop="blogPost">
-  <div class="article-inner">
-    
-      <header class="article-header">
-        
   
-    <h1 itemprop="name">
-      <a class="article-title" href="/2018/07/24/contains/">js判断一个元素是不是另一个元素的子元素</a>
-    </h1>
   
 
-        
-        <a href="/2018/07/24/contains/" class="archive-article-date">
-  	<time datetime="2018-07-24T08:09:21.716Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2018-07-24</time>
-</a>
-        
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <p>   在做一些效果时，很经常会用到 ==这个元素是否在指定元素内 #03a9f4==，特别是在一些鼠标相关事件的应用中，例如，在做弹窗的时候，最常遇到的需求就是，点击弹窗外的部分弹窗需要收回。实现方式多种多想，下面是我学习到的一种方式：</p>
-<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">isInThis</span>(<span class="params">target,parent</span>)</span>&#123;</span><br><span class="line">	<span class="comment">//首先要做空元素判断和是否为body</span></span><br><span class="line">	whild ( target != undifinde &amp;&amp;obj != <span class="literal">null</span> &amp;&amp; obj.tagName.toUpperCase() != <span class="string">'BODY'</span>)&#123;</span><br><span class="line">		<span class="comment">//判断当前点击对象是否是所指定的元素</span></span><br><span class="line">		<span class="keyword">if</span> ( target == parent ) &#123;</span><br><span class="line">			<span class="comment">//判断成功返回true</span></span><br><span class="line">			<span class="keyword">return</span> <span class="literal">true</span>;</span><br><span class="line">		&#125;</span><br><span class="line">		<span class="comment">//上述条件不满足将target重新赋值为其上一级</span></span><br><span class="line">		target = target.parentNode;</span><br><span class="line">	&#125;</span><br><span class="line">	<span class="comment">//不满足所有返回false</span></span><br><span class="line">	<span class="keyword">return</span> <span class="literal">false</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-<p>上述的方法是我说了解到的比较简单的而且没有任何兼容性问题的方法，下面描述第二种方法，就是js的contains方法，这个方法通常会用来判断一个字符串是否包含另外一个字符串，也可以用来判断元素间的包含关系。</p>
-<pre><code>代码：
-</code></pre><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">isContains</span>(<span class="params">target,parent</span>)</span>&#123;</span><br><span class="line">	<span class="comment">//containe方法会直接返回true或者false,用法为父元素.contains(子元素)</span></span><br><span class="line">	<span class="keyword">return</span> parent.contains(target);</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-<p>FireFox除了支持Contains方法外，还支持compareDocumentPosition()这个方法，这是W3C制定的方法，标准浏览器都支持，但是由于实用性比较差，故而没什么人用，它返回的并不是简单的true和false，而是一串奇怪的数值，是通过下表的值计算出来的。</p>
-<table>
-<thead>
-<tr>
-<th>Bits</th>
-<th>Number</th>
-<th>Meaning</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>000000</td>
-<td>0</td>
-<td>元素一致</td>
-</tr>
-<tr>
-<td>000001</td>
-<td>1</td>
-<td>节点在不同的文档（或者一个在文档外）</td>
-</tr>
-<tr>
-<td>000010</td>
-<td>2</td>
-<td>节点B在节点A之前</td>
-</tr>
-<tr>
-<td>000100</td>
-<td>4</td>
-<td>节点A在节点B之前</td>
-</tr>
-<tr>
-<td>001000</td>
-<td>8</td>
-<td>节点B包含节点A</td>
-</tr>
-<tr>
-<td>010000</td>
-<td>16</td>
-<td>节点A包含节点B</td>
-</tr>
-<tr>
-<td>100000</td>
-<td>32</td>
-<td>浏览器的私有使用</td>
-</tr>
-</tbody>
-</table>
-<p> 对于我这种数学无能的人来说，计算永远都是痛。、<br>下面我只能贴上我抄来的代码，其实我也不是很理解，仅作为学习参考。</p>
-<h3 id="HTML"><a href="#HTML" class="headerlink" title="HTML:"></a>HTML:</h3><figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">div</span> <span class="attr">id</span>=<span class="string">"parent"</span> <span class="attr">style</span>=<span class="string">" padding:10px; border:1px solid #DDD; background:#678789"</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="name">p</span>&gt;</span>这里是父元素<span class="tag">&lt;/<span class="name">p</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="name">p</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">strong</span> <span class="attr">id</span>=<span class="string">"child"</span> <span class="attr">style</span>=<span class="string">" padding:10px; border:1px solid #DDD; background:#FE7878"</span>&gt;</span>这个是子元素<span class="tag">&lt;/<span class="name">strong</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;/<span class="name">p</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br></pre></td></tr></table></figure>
-<h3 id="JavaScript"><a href="#JavaScript" class="headerlink" title="JavaScript:"></a>JavaScript:</h3><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"> <span class="built_in">window</span>.onload = <span class="function"><span class="keyword">function</span>(<span class="params"></span>)</span>&#123;</span><br><span class="line">    <span class="keyword">var</span> A = <span class="built_in">document</span>.getElementById(<span class="string">'parent'</span>),</span><br><span class="line">    B = <span class="built_in">document</span>.getElementById(<span class="string">'child'</span>);</span><br><span class="line">    alert(A.compareDocumentPosition(B));<span class="comment">//B与A不相连，B在A的后面，B被A包含 4+16 = 20</span></span><br><span class="line">    alert(B.compareDocumentPosition(A));<span class="comment">//A与B不相连，A在B的前面，A包含B 2+8 = 10</span></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-<p>上述就是我学习到的对元素位置的判断，希望能帮助到大家！</p>
-
-      
-
-      
-    </div>
-    <div class="article-info article-info-index">
-      
-      
-	<div class="article-tag tagcloud">
-		<i class="icon-price-tags icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color2">JS,DOM</a>
-        		</li>
-      		
-		</ul>
-	</div>
-
-      
-
-      
-        <p class="article-more-link">
-          <a class="article-more-a" href="/2018/07/24/contains/">展开全文 >></a>
-        </p>
-      
-
-      
-      <div class="clearfix"></div>
-    </div>
-  </div>
-</article>
-
-<aside class="wrap-side-operation">
-    <div class="mod-side-operation">
-        
-        <div class="jump-container" id="js-jump-container" style="display:none;">
-            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
-                <i class="icon-font icon-back"></i>
-            </a>
-            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
-                <i class="icon-font icon-plane jump-plane"></i>
-            </div>
-        </div>
-        
-        
-    </div>
-</aside>
-
-
-
+  
 
   
+
   
 
 
@@ -382,8 +323,8 @@
     <script>
 	var yiliaConfig = {
 		mathjax: false,
-		isHome: true,
-		isPost: false,
+		isHome: false,
+		isPost: true,
 		isArchive: false,
 		isTag: false,
 		isCategory: false,
